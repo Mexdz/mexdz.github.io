@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burak Taha Yaman | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="logo">Burak <span>/ Mexdz</span></a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
+          <li><a href="#about" data-i18n="nav_about">About Me</a></li>
+          <li><a href="#education" data-i18n="nav_education">Education</a></li>
+          <li><a href="#experience" data-i18n="nav_experience">Work Experience</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+          <li><a href="#skills-certificates" data-i18n="nav_skills_certificates">Skills & Certificates</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="toggle-btn" id="langToggle">TR</button>
+        <button class="toggle-btn" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-kicker" data-i18n="hero_kicker">Portfolio</p>
+          <h1 class="hero-title"><span data-i18n="hero_greeting">Hi, It's</span> <span data-i18n="hero_name">Burak Taha Yaman</span></h1>
+          <h2 class="hero-subtitle">
+            <span data-i18n="hero_intro">I'm a</span>
+            <span class="typed-text" id="typedText"></span><span class="cursor"></span>
+          </h2>
+
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/buraktahayaman/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Mexdz" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/buraktahaymn/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/BurakTahaYaman" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="cv.pdf" target="_blank" aria-label="CV" class="cv-icon">CV</a>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects" data-i18n="btn_projects">View Projects</a>
+            <a class="btn btn-secondary" href="#about" data-i18n="btn_about">About Me</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap">
+          <div class="image-ring">
+            <img class="profile-image" src="profile.jpg" alt="Burak Taha Yaman profile photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title" data-i18n-html="about_title">About <span>Me</span></h2>
+
+        <div class="about-grid">
+          <div class="glass-card about-text">
+            <h3 data-i18n="about_who">Who I Am</h3>
+            <p data-i18n="about_p1">I am Burak Taha Yaman, a Software Engineering major currently in my junior year. Over time, I started moving beyond general software development and found myself especially drawn to embedded systems and low-level programming.</p>
+            <p data-i18n="about_p2">What makes embedded coding exciting for me is the chance to see physical results from what I build. I genuinely enjoy facing technical problems and solving them like puzzles, step by step, until the system works exactly as intended.</p>
+            <p data-i18n="about_p3">My current goal is to learn Embedded C and C++ as deeply as I can, while also focusing on a microprocessor architecture to better understand how hardware and software interact at a much deeper level.</p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <strong data-i18n="about_focus_title">Focus Area</strong>
+                <span data-i18n="about_focus_text">Embedded systems, embedded C/C++, and problem-driven development</span>
+              </div>
+              <div class="highlight-item">
+                <strong data-i18n="about_goal_title">Current Goal</strong>
+                <span data-i18n="about_goal_text">Push my embedded C/C++ knowledge to its limits and study microprocessor architecture in depth</span>
+              </div>
+              <div class="highlight-item">
+                <strong data-i18n="about_interest_title">What I Enjoy</strong>
+                <span data-i18n="about_interest_text">Turning code into physical outcomes and solving engineering challenges like puzzles</span>
+              </div>
+              <div class="highlight-item">
+                <strong data-i18n="about_approach_title">Academic Stage</strong>
+                <span data-i18n="about_approach_text">Junior-year Software Engineering student building a stronger embedded systems path</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card">
+            <h3 data-i18n="about_overview">Quick Overview</h3>
+            <div class="skill-list">
+              <div class="skill-chip" data-i18n="about_chip_1">Software Engineering major, junior year</div>
+              <div class="skill-chip" data-i18n="about_chip_2">Actively transitioning toward embedded systems</div>
+              <div class="skill-chip" data-i18n="about_chip_3">Motivated by physical, real-world output from code</div>
+              <div class="skill-chip" data-i18n="about_chip_4">Enjoys technical debugging and puzzle-like problem solving</div>
+              <div class="skill-chip" data-i18n="about_chip_5">Focused on Embedded C/C++ and microprocessor architecture</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section-title" data-i18n="education_title">Education</h2>
+
+        <div class="timeline">
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2018 - 2019</div>
+            <a class="timeline-card timeline-link-card" href="https://centennialhs.ccsoh.us/" target="_blank" rel="noopener noreferrer">
+              <h3 data-i18n="edu_1_title">Centennial High School</h3>
+              <p data-i18n="edu_1_text">Centennial High School in Columbus, Ohio. I completed only my freshman year there.</p>
+            </a>
+          </div>
+
+          <div class="timeline-item right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2019 - 2022</div>
+            <a class="timeline-card timeline-link-card" href="https://ibal.meb.k12.tr/" target="_blank" rel="noopener noreferrer">
+              <h3 data-i18n="edu_2_title">İzzet Baysal Anadolu Lisesi</h3>
+              <p data-i18n="edu_2_text">Located in Merkez, Bolu. I completed the remaining three years of high school here.</p>
+            </a>
+          </div>
+
+          <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-year">2023 - 2027</div>
+            <a class="timeline-card timeline-link-card" href="https://www.ankara.edu.tr/" target="_blank" rel="noopener noreferrer">
+              <h3 data-i18n="edu_3_title">Ankara University</h3>
+              <p data-i18n="edu_3_text">Software Engineering major. Expected graduation year: 2027.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="section" id="experience">
+  <div class="container">
+    <h2 class="section-title" data-i18n-html="experience_title">Work <span>Experience</span></h2>
+    <div class="experience-list experience-list-single">
+      <a href="https://veri.ankara.edu.tr" target="_blank" class="experience-link">
+        <div class="experience-card">
+          <div class="experience-top">
+            <div>
+              <h3 data-i18n="exp_1_role">Part-time Student</h3>
+              <p class="experience-company" data-i18n="exp_1_company">
+                Ankara University – Kurumsal Veri Yönetimi Koordinatörlüğü
+              </p>
+            </div>
+            <span class="experience-date" data-i18n="exp_1_date">
+              October 2024 - Present
+            </span>
+          </div>
+          <p class="experience-location" data-i18n="exp_1_location">
+            Ankara University · Part-time Student Program
+          </p>
+          <p class="experience-desc" data-i18n="exp_1_desc">
+            Working within Ankara University's Corporate Data Management Coordination Office,
+            supporting data-oriented institutional processes, documentation, and coordination
+            tasks connected to university information management systems.
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title" data-i18n-html="projects_title">Latest <span>Projects</span></h2>
+
+        <div class="projects-grid">
+          <a href="https://github.com/Emirhan-T/FocusFlow" target="_blank" rel="noopener noreferrer" class="project-card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Web project" />
+            <div class="project-overlay">
+              <h3 data-i18n="project_1_title">Focus Flow</h3>
+              <p data-i18n="project_1_text">Mobile-based new generation pomodoro app.</p>
+              <div class="project-tags">
+                <span>Flutter</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/Emirhan-T/DND-Web-" target="_blank" rel="noopener noreferrer" class="project-card">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80" alt="Web project" />
+            <div class="project-overlay">
+              <h3 data-i18n="project_2_title">DND Web</h3>
+              <p data-i18n="project_2_text">Web project with integrated AI.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/Mexdz/Notflix" target="_blank" rel="noopener noreferrer" class="project-card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Machine learning project" />
+            <div class="project-overlay">
+              <h3 data-i18n="project_3_title">Notflix</h3>
+              <p data-i18n="project_3_text">Python and machine learning based movie recommendation project.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Web Interface</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/Mexdz/LEDRoulette" target="_blank" rel="noopener noreferrer" class="project-card">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="STM32 project" />
+            <div class="project-overlay">
+              <h3 data-i18n="project_4_title">LED Roulette</h3>
+              <p data-i18n="project_4_text">An STM32-based embedded systems project.</p>
+              <div class="project-tags">
+                <span>STM32</span>
+                <span>Embedded C</span>
+                <span>Microcontroller</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills-certificates">
+      <div class="container">
+        <h2 class="section-title" data-i18n-html="skills_title">My <span>Skills</span></h2>
+
+        <div class="skills-grid skills-cert-grid">
+          <div class="glass-card skills-block">
+            <h3 data-i18n="technical_skills">Skills</h3>
+
+            <div class="certificate-list clickable-list">
+			<div class="certificate-item" data-i18n="skill_1">English – TOEFL iBT 107</div>
+              <div class="certificate-item" data-i18n="skill_2">C</div>
+              <div class="certificate-item" data-i18n="skill_3">C++</div>
+              <div class="certificate-item" data-i18n="skill_4">Java</div>
+            </div>
+          </div>
+
+          <div class="glass-card certificates-block">
+            <h3 data-i18n="certificates_title">Certificates</h3>
+
+            <div class="certificate-list clickable-list">
+              <a class="certificate-item cert-link" href="Cpp_certificate.pdf" target="_blank" data-i18n="certificate_1">Introduction to Programming with C++</a>
+              <a class="certificate-item cert-link" href="Java_certificate.pdf" target="_blank" data-i18n="certificate_2">Introduction to Programming with Java</a>
+              <a class="certificate-item cert-link" href="git_certificate.pdf" target="_blank" data-i18n="certificate_3">Version Control: Git and GitHub</a>
+              <a class="certificate-item cert-link" href="test_certificate.pdf" target="_blank" data-i18n="certificate_4">Introduction to Software Testing</a>
+              <a class="certificate-item cert-link" href="camp1.pdf" target="_blank" data-i18n="certificate_5">GNU/Linux System Administration Level 1</a>
+              <a class="certificate-item cert-link" href="camp2.pdf" target="_blank" data-i18n="certificate_6">Introduction to Network Administration</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-socials">
+		<a href="https://www.linkedin.com/in/buraktahayaman/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+		<a href="https://github.com/Mexdz" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+		<a href="https://www.instagram.com/buraktahaymn/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+		<a href="https://x.com/BurakTahaYaman" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="cv.pdf" aria-label="CV" target="_blank" class="cv-icon">CV</a>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about" data-i18n="nav_about">About Me</a>
+        <a href="#education" data-i18n="nav_education">Education</a>
+        <a href="#experience" data-i18n="nav_experience">Work Experience</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#skills-certificates" data-i18n="nav_skills_certificates">Skills & Certificates</a>
+      </div>
+
+      <p class="copyright" data-i18n="footer_text">© 2026 Burak Taha Yaman | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
